@@ -40,6 +40,9 @@ alias la='ls -alh'
 alias cl='clear'
 alias md='mkdir'
 alias btw='neofetch'
+alias reboot='loginctl reboot'
+alias poweroff='loginctl poweroff'
+alias suspend='loginctl suspend'
 
 # Default programs
 export EDITOR="vim"
