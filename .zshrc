@@ -43,8 +43,14 @@ alias btw='neofetch'
 alias reboot='loginctl reboot'
 alias poweroff='loginctl poweroff'
 alias suspend='loginctl suspend'
+alias homework='~/documents/homework/5semestre/'
 
 # Default programs
 export EDITOR="vim"
 export BROWSER="brave"
 
+# path
+export PATH=$PATH:/home/fernando/scripts
+
+# Etc
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
