@@ -1,3 +1,7 @@
 # basic commands
-super + s
+alt + s
   flameshot gui
+super + h
+  sxiv ~/pictures/horario.jpeg
+alt + r
+  st -e ranger

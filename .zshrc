@@ -53,4 +53,4 @@ export BROWSER="brave"
 export PATH=$PATH:/home/fernando/scripts
 
 # Etc
-alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+#alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
