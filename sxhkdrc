@@ -3,5 +3,7 @@ alt + s
   flameshot gui
 super + h
   sxiv ~/pictures/horario.jpeg
-alt + r
+super + e
   st -e ranger
+suepr + t
+  st
