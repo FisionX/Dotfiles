@@ -2,8 +2,10 @@
 alt + s
   flameshot gui
 super + h
-  sxiv ~/pictures/horario.jpeg
+  sxiv -b ~/pictures/horario.jpeg
 super + e
   st -e ranger
-suepr + t
+super + t
   st
+super + m
+  st -e ncmpcpp
