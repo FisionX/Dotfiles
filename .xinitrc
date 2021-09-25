@@ -1,7 +1,8 @@
-pulseaudio --start &
-~/.fehbg &
-dunst &
-flameshot &
-sxhkd &
+~/.config/.fehbg &
 dwmblocks &
+mpd&
+unclutter &
+sxhkd -c ~/suckless/dotfiles/sxhkdrc &
+xinput set-prop 11 330 -.6 &
+dunst &
 exec dwm
