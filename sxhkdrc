@@ -9,3 +9,5 @@ super + t
   st
 super + m
   st -e ncmpcpp
+super + k
+  slock
