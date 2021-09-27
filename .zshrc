@@ -10,6 +10,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+#export LANGUAGE="en_US.UTF-8"
+#export LC_ALL="C"
+
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -44,6 +47,9 @@ alias reboot='loginctl reboot'
 alias poweroff='loginctl poweroff'
 alias suspend='loginctl suspend'
 alias homework='~/documents/homework/5semestre/'
+alias x='startx'
+alias ra='ranger'
+alias pac='doas pacman'
 
 # Default programs
 export EDITOR="vim"
@@ -51,6 +57,7 @@ export BROWSER="brave"
 
 # path
 export PATH=$PATH:/home/fernando/scripts
+export PATH=$PATH:/home/fernando/.local/bin
 
 # Etc
 #alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
