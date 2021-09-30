@@ -1,5 +1,5 @@
 # basic commands
-alt + s
+super + shift + s
   flameshot gui
 super + h
   sxiv -b ~/pictures/horario.jpeg
