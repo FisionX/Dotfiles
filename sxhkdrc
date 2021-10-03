@@ -11,3 +11,7 @@ super + m
   st -e ncmpcpp
 super + k
   slock
+super + F11
+  xbacklight -dec 10; notify-send -t 1000 "Brightness set to $(xbacklight -get)"
+super + F12
+  xbacklight -inc 10; notify-send -t 1000 "Brightness set to $(xbacklight -get)"
