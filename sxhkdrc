@@ -12,6 +12,6 @@ super + m
 super + k
   slock
 super + F11
-  xbacklight -dec 10; notify-send -t 1000 "Brightness set to $(xbacklight -get)"
+  xbacklight -set 10; notify-send -t 1000 "🌙 Night mode activated"
 super + F12
-  xbacklight -inc 10; notify-send -t 1000 "Brightness set to $(xbacklight -get)"
+  xbacklight -set 100; notify-send -t 1000 "☀️  Day mode activated"
