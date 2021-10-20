@@ -9,6 +9,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set hidden
 set termguicolors
 
+" load colors
+source ~/.config/nvim/colors/molokai.vim
+
 
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
