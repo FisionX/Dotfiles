@@ -11,6 +11,8 @@ super + m
   st -e ncmpcpp
 super + k
   slock
+super + n 
+  st -e pulsemixer
 super + F11
   xbacklight -set 10; notify-send -t 1000 "🌙 Night mode activated"
 super + F12
