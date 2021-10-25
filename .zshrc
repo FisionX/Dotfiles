@@ -53,7 +53,7 @@ alias vi='nvim'
 alias wall='sxiv -bt ~/.local/share/wallhaven'
 
 # Directory aliases
-homework='wstorage/Documentos/Estudios/5to\ semestre'
+homework='/home/fernando/wstorage/Documentos/Estudios/5to\ semestre'
 playlist='/home/fernando/wstorage/multimedia/tidal/download/Playlist/'
 
 # Default programs
