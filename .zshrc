@@ -1,5 +1,5 @@
 # Lines configured by installation
-HISTFILE=~/.histfile
+HISTFILE=~/.config/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
@@ -46,13 +46,18 @@ alias btw='neofetch'
 alias reboot='loginctl reboot'
 alias poweroff='loginctl poweroff'
 alias suspend='loginctl suspend'
-alias homework='~/documents/homework/5semestre/'
 alias x='startx'
 alias ra='ranger'
 alias pac='doas pacman'
+alias vi='nvim'
+alias wall='sxiv -bt ~/.local/share/wallhaven'
+
+# Directory aliases
+homework='wstorage/Documentos/Estudios/5to\ semestre'
+playlist='/home/fernando/wstorage/multimedia/tidal/download/Playlist/'
 
 # Default programs
-export EDITOR="vim"
+export EDITOR="nvim"
 export BROWSER="brave"
 
 # path
