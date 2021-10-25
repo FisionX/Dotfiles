@@ -9,6 +9,8 @@ super + t
   st
 super + m
   st -e ncmpcpp
+super + p 
+  st -e pulsemixer
 super + k
   slock
 super + F11
