@@ -1,21 +1,29 @@
 # basic commands
 super + shift + s
-  flameshot gui
+    flameshot gui
 super + h
-  sxiv -b ~/pictures/horario.jpeg
+    sxiv -b ~/pictures/horario.jpeg
 super + e
-  st -e ranger
+    st -e ranger
 super + t
-  st
+    st
 super + m
-  st -e ncmpcpp
+    st -e ncmpcpp
 super + p 
-  st -e pulsemixer
+    st -e pulsemixer
 super + k
-  slock
+    slock
 super + n 
-  st -e pulsemixer
+    tabbed surf -e
+
+# set brightness
 super + F11
-  xbacklight -set 10; notify-send -t 1000 "🌙 Night mode activated"
+    xbacklight -set 10 && notify-send -t 1000 "🌙 Night mode activated"
 super + F12
-  xbacklight -set 100; notify-send -t 1000 "☀️  Day mode activated"
+    xbacklight -set 100 && notify-send -t 1000 "☀️  Day mode activated"
+
+# keeb layout
+super + u
+    setxkbmap us; kill -45 $(pidof dwmblocks); notify-send -u low -t 1000 "Keyboard set to US"
+super + i
+    setxkbmap es; kill -45 $(pidof dwmblocks); notify-send -u low -t 1000 "Keyboard set to MX"

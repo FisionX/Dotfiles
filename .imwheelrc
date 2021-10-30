@@ -1,6 +1,19 @@
-# Speed up scrolling for the brave-browser
-"^brave-browser$"
+"^element$"
     None, Up, Button4, 2
     None, Down, Button5, 2
     None,       Thumb1, Right
     None,       Thumb2, Left
+
+
+"^Navigator$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+    None,       Thumb1, Right
+    None,       Thumb2, Left
+
+"^discord$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+    None,       Thumb1, Right
+    None,       Thumb2, Left
+

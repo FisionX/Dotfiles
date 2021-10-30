@@ -1,5 +1,5 @@
 # Lines configured by installation
-HISTFILE=~/.config/histfile
+HISTFILE=~/.cache/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
@@ -51,17 +51,20 @@ alias ra='ranger'
 alias pac='doas pacman'
 alias vi='nvim'
 alias wall='sxiv -bt ~/.local/share/wallhaven'
+alias w='wget'
+alias z='zathura'
 
 # Directory aliases
-homework='/home/fernando/wstorage/Documentos/Estudios/5to\ semestre'
+homework='/home/fernando/wstorage/Documentos/Estudios/5to semestre'
 playlist='/home/fernando/wstorage/multimedia/tidal/download/Playlist/'
+memes='/home/fernando/wstorage/multimedia/memes'
 
 # Default programs
 export EDITOR="nvim"
 export BROWSER="brave"
 
 # path
-export PATH=$PATH:/home/fernando/scripts
+export PATH=$PATH:/home/fernando/suckless/scripts
 export PATH=$PATH:/home/fernando/.local/bin
 
 # Etc
