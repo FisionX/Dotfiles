@@ -13,8 +13,8 @@ set termguicolors
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 
-verbose set shiftwidth=2
-verbose set tabstop=2
+verbose set shiftwidth=4
+verbose set tabstop=4
 verbose set expandtab
 
 set nobackup
