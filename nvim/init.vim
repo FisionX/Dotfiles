@@ -40,7 +40,7 @@ call plug#end()
 colorscheme molokai
 
 " coc config
-[ -f $HOME/.config/nvim/] && source ~/.config/nvim/coc.vim
+source ~/.config/nvim/coc.vim
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
