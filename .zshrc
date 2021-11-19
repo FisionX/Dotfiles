@@ -1,3 +1,6 @@
+# Flex on Ubuntu users
+neofetch
+
 # Lines configured by installation
 HISTFILE=~/.cache/histfile
 HISTSIZE=1000
@@ -50,14 +53,12 @@ alias x='startx'
 alias ra='ranger'
 alias pac='doas pacman'
 alias vi='nvim'
-alias wall='sxiv -bt ~/.local/share/wallhaven'
 alias w='wget'
 alias z='zathura'
 
-# Directory aliases
-homework='/home/fernando/wstorage/Documentos/Estudios/5to semestre'
-playlist='/home/fernando/wstorage/multimedia/tidal/download/Playlist/'
-memes='/home/fernando/wstorage/multimedia/memes'
+# Source specific aliases for this system (If exist)
+[ -f "$HOME/shell/shortcutrc" ] && source "$HOME/shell/shortcutrc"
+[ -f "$HOME/shell/aliasrc" ] && source "$HOME/shell/aliasrc"
 
 # Default programs
 export EDITOR="nvim"

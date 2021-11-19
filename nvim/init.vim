@@ -8,14 +8,18 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set hidden
 set termguicolors
+set clipboard=unnamedplus
+set noswapfile
+filetype plugin on
 
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 
-verbose set shiftwidth=2
-verbose set tabstop=2
-verbose set expandtab
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
 
 set nobackup
 set scrolloff=10
@@ -36,7 +40,12 @@ call plug#end()
 colorscheme molokai
 
 " coc config
-source ~/.config/nvim/coc.vim
+[ -f $HOME/.config/nvim/] && source ~/.config/nvim/coc.vim
+
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
+	autocmd BufWritePre * %s/\s\+$//e
+	autocmd BufWritePre * %s/\n\+\%$//e
+	autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Color preview config
 let g:Hexokinase_highlighters = ['backgroundfull']
@@ -73,3 +82,11 @@ function! ToggleHiddenAll()
     endif
 endfunction
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
+call ToggleHiddenAll()
+
+" Autocomplete "" () {} [] etc
+"inoremap        (  ()<Left>
+"inoremap        "  ""<Left>
+"inoremap        '  ''<Left>
+"inoremap        [  []<Left>
+"inoremap        {  {}<Left>

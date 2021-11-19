@@ -1,3 +1,4 @@
+# I'll try to separate this bindigs from the wm bindings by using the super key for everything 
 # basic commands
 super + shift + s
     flameshot gui
@@ -27,3 +28,9 @@ super + u
     setxkbmap us; kill -45 $(pidof dwmblocks); notify-send -u low -t 1000 "Keyboard set to US"
 super + i
     setxkbmap es; kill -45 $(pidof dwmblocks); notify-send -u low -t 1000 "Keyboard set to MX"
+
+# Close notification
+super + Return
+    dunstctl close
+super + control + Return
+    dunstctl close-all
