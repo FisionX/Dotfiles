@@ -55,6 +55,7 @@ alias pac='doas pacman'
 alias vi='nvim'
 alias w='wget'
 alias z='zathura'
+alias viconf='$EDITOR ~/.config/nvim/init.vim'
 
 # Source specific aliases for this system (If exist)
 [ -f "$HOME/shell/shortcutrc" ] && source "$HOME/shell/shortcutrc"
