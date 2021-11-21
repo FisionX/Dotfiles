@@ -58,8 +58,8 @@ alias z='zathura'
 alias viconf='$EDITOR ~/.config/nvim/init.vim'
 
 # Source specific aliases for this system (If exist)
-[ -f "$HOME/shell/shortcutrc" ] && source "$HOME/shell/shortcutrc"
-[ -f "$HOME/shell/aliasrc" ] && source "$HOME/shell/aliasrc"
+[ -f "$HOME/.config/shell/shortcutrc" ] && source "$HOME/.config/shell/shortcutrc"
+[ -f "$HOME/.config/shell/aliasrc" ] && source "$HOME/.config/shell/aliasrc"
 
 # Default programs
 export EDITOR="nvim"
