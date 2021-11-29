@@ -33,6 +33,7 @@ Plug 'preservim/nerdtree'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
 Plug 'tomasr/molokai'
+Plug 'tmsvg/pear-tree'
 
 call plug#end()
 
@@ -40,7 +41,7 @@ call plug#end()
 colorscheme molokai
 
 " coc config
-source ~/.config/nvim/coc.vim
+source ~/.config/nvim/coc
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 	autocmd BufWritePre * %s/\s\+$//e
@@ -84,9 +85,9 @@ endfunction
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
 call ToggleHiddenAll()
 
-" Autocomplete "" () {} [] etc
-"inoremap        (  ()<Left>
-"inoremap        "  ""<Left>
-"inoremap        '  ''<Left>
-"inoremap        [  []<Left>
-"inoremap        {  {}<Left>
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-prettier',
+  \ 'coc-pyright',
+  \ 'coc-clangd',
+  \ ]
