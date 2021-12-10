@@ -40,7 +40,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-# Bindings
+# Alias
 alias ll='ls -lh'
 alias la='ls -alh'
 alias cl='clear'
@@ -60,6 +60,7 @@ alias viconf='$EDITOR ~/.config/nvim/init.vim'
 # Source specific aliases for this system (If exist)
 [ -f "$HOME/.config/shell/shortcutrc" ] && source "$HOME/.config/shell/shortcutrc"
 [ -f "$HOME/.config/shell/aliasrc" ] && source "$HOME/.config/shell/aliasrc"
+[ -f "$HOME/.config/shell/profile" ] && source "$HOME/.config/shell/profile"
 
 # Default programs
 export EDITOR="nvim"
