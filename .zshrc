@@ -56,15 +56,16 @@ alias vi='nvim'
 alias w='wget'
 alias z='zathura'
 alias viconf='$EDITOR ~/.config/nvim/init.vim'
+alias cp='cp -r'
 
 # Source specific aliases for this system (If exist)
 [ -f "$HOME/.config/shell/shortcutrc" ] && source "$HOME/.config/shell/shortcutrc"
 [ -f "$HOME/.config/shell/aliasrc" ] && source "$HOME/.config/shell/aliasrc"
-[ -f "$HOME/.config/shell/profile" ] && source "$HOME/.config/shell/profile"
+#[ -f "$HOME/.config/shell/profile" ] && source "$HOME/.config/shell/profile"
 
 # Default programs
 export EDITOR="nvim"
-export BROWSER="brave"
+export BROWSER="librewolf"
 
 # path
 export PATH=$PATH:/home/fernando/suckless/scripts
