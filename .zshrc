@@ -13,8 +13,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#export LANGUAGE="en_US.UTF-8"
-#export LC_ALL="C"
+export LANGUAGE="en_US.UTF-8"
+export LC_ALL="C"
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
@@ -65,7 +65,7 @@ alias cp='cp -r'
 
 # Default programs
 export EDITOR="nvim"
-export BROWSER="librewolf"
+export BROWSER="brave"
 
 # path
 export PATH=$PATH:/home/fernando/suckless/scripts
