@@ -18,7 +18,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 set shiftwidth=4
 set tabstop=4
-set expandtab
+"set expandtab
 set smarttab
 
 set nobackup
