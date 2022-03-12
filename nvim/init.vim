@@ -10,6 +10,7 @@ set hidden
 set termguicolors
 set clipboard=unnamedplus
 set noswapfile
+set smartcase
 filetype plugin on
 
 " Disables automatic commenting on newline:
@@ -90,4 +91,4 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-pyright',
   \ 'coc-clangd',
-  \ ]
+  \ 'coc-html']
