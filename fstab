@@ -1,0 +1,26 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+
+# /dev/nvme1n1p2 LABEL=ARTIX
+UUID=788dfb6e-dbec-401e-86a8-ed1e279b0155	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme1n1p1 LABEL=BOOT
+UUID=28E8-3F6A      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/nvme1n1p5 LABEL=HOME
+UUID=a32527cf-fa8f-42bb-a4a7-0879d294afd8	/home     	ext4      	rw,relatime	0 2
+
+# /dev/nvme1n1p4 LABEL=SWAP
+UUID=a08209f1-7b38-4ac5-b732-83ce22f4458f	none      	swap      	defaults  	0 0
+
+# Wstorage disk
+UUID=E24E1A174E19E4D7 		/home/fernando/wstorage		ntfs		rw,auto		0 0
+
+# storage partition
+#LABEL=Storage 				/home/fernando/storage	ext4	rw,relatime		0 0
+
+
+# usb automount
+/dev/sdc1	/mnt	ntfs 	rw,auto,nofail		0 0
