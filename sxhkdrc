@@ -16,6 +16,8 @@ super + k
     slock
 super + n
     tabbed surf -e
+super + shift + p
+	pulseeffects
 
 # set brightness
 super + F11

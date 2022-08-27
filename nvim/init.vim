@@ -3,6 +3,7 @@ syntax on
 set encoding=utf-8
 set nocompatible
 set number relativenumber
+set scl=yes
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
@@ -11,21 +12,25 @@ set termguicolors
 set clipboard=unnamedplus
 set noswapfile
 set smartcase
+set cursorline
+set showmatch
+set showcmd
+set nohlsearch
+set hidden
 filetype plugin on
-
-" Disables automatic commenting on newline:
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
 
 set shiftwidth=4
 set tabstop=4
-"set expandtab
-set smarttab
+set expandtab
+"set smarttab
+set smartindent
 
 set nobackup
 set scrolloff=10
 set pastetoggle=<F2>
 
+" Disables automatic commenting on newline:
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 call plug#begin()
 
@@ -35,8 +40,20 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
 Plug 'tomasr/molokai'
 Plug 'tmsvg/pear-tree'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 call plug#end()
+
+"remaps
+let mapleader = " "
+nnoremap <S-h> :call ToggleHiddenAll()<CR>
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
 
 " load colors
 colorscheme molokai
@@ -83,8 +100,7 @@ function! ToggleHiddenAll()
         set showcmd
     endif
 endfunction
-nnoremap <S-h> :call ToggleHiddenAll()<CR>
-call ToggleHiddenAll()
+"call ToggleHiddenAll()
 
 let g:coc_global_extensions = [
   \ 'coc-snippets',
