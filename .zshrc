@@ -64,12 +64,12 @@ alias zshconf='$EDITOR ~/.config/zsh/.zshrc'
 [ -f "$HOME/.config/shell/aliasrc" ] && source "$HOME/.config/shell/aliasrc"
 
 
-# path
+# Exports
 export PATH=$PATH:~/suckless/scripts
 export PATH=$PATH:~/.local/bin
-
 export BROWSER='brave'
 export EDITOR='nvim'
+export MANWIDTH=110
 
 # Etc
 #alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'

@@ -17,6 +17,7 @@ set showmatch
 set showcmd
 set nohlsearch
 set hidden
+set nowrap
 filetype plugin on
 
 set shiftwidth=4
@@ -47,7 +48,7 @@ call plug#end()
 
 "remaps
 let mapleader = " "
-nnoremap <S-h> :call ToggleHiddenAll()<CR>
+"nnoremap <S-h> :call ToggleHiddenAll()<CR>
 " Using Lua functions
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>

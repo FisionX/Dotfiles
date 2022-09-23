@@ -3,7 +3,7 @@
 super + shift + s
     flameshot gui
 super + h
-    sxiv -b ~/pictures/horario.jpeg
+    sxiv -b ~/wstorage/Documentos/Estudios/horarios/horario_uni.png
 super + e
     st -e ranger
 super + t
