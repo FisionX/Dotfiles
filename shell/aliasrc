@@ -9,3 +9,4 @@ multimedia='/home/fernando/wstorage/multimedia'
 
 alias wall='sxiv -bt ~/.local/share/wallhaven'
 alias n='vi ~/wstorage/Documentos/notes/index.md'
+change

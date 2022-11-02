@@ -67,7 +67,7 @@ alias zshconf='$EDITOR ~/.config/zsh/.zshrc'
 # Exports
 export PATH=$PATH:~/suckless/scripts
 export PATH=$PATH:~/.local/bin
-export BROWSER='brave'
+export BROWSER='librewolf'
 export EDITOR='nvim'
 export MANWIDTH=110
 

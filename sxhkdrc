@@ -18,6 +18,8 @@ super + n
     tabbed surf -e
 super + shift + p
 	pulseeffects
+super + shift + w
+    librewolf -p anon
 
 # set brightness
 super + F11
