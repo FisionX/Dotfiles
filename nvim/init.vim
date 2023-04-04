@@ -1,5 +1,4 @@
 syntax on
-
 set encoding=utf-8
 set nocompatible
 set number relativenumber
@@ -109,4 +108,5 @@ let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-clangd',
   \ 'coc-html',
+  \ 'coc-docker',
   \ 'coc-css']

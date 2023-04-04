@@ -27,9 +27,9 @@ super + k
 
 # set brightness
 super + F11
-    xbacklight -set 10 && notify-send -t 1000 "🌙 Night mode activated"
+    xbacklight -dec 10%
 super + F12
-    xbacklight -set 100 && notify-send -t 1000 "☀️  Day mode activated"
+    xbacklight -inc 10%
 
 # keeb layout
 
