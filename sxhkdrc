@@ -9,10 +9,10 @@ super + e
 super + t
     st
 super + m
-    st -e ncmpcpp
+    st -e cd $playlist
 super + p
     st -e pulsemixer
-super + k
+super + l
     slock
 super + n
     tabbed surf -e
@@ -20,6 +20,10 @@ super + shift + p
 	pulseeffects
 super + shift + w
     librewolf -p anon
+super + o
+    onlyoffice-desktopeditors
+super + k
+    keepassxc
 
 # set brightness
 super + F11
@@ -46,3 +50,9 @@ super + Return
     dunstctl close
 super + control + Return
     dunstctl close-all
+
+# Volume control
+alt + -
+    pamixer --allow-boost -d 5; kill -44 $(pidof dwmblocks)
+alt + =
+    pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)

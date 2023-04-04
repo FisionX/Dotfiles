@@ -33,10 +33,10 @@ set pastetoggle=<F2>
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-call plug#begin()
+call plug#begin('~/config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'vimwiki/vimwiki'
 Plug 'tomasr/molokai'
@@ -63,9 +63,9 @@ colorscheme molokai
 source ~/.config/nvim/coc
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
-	autocmd BufWritePre * %s/\s\+$//e
-	autocmd BufWritePre * %s/\n\+\%$//e
-	autocmd BufWritePre *.[ch] %s/\%$/\r/e
+"	autocmd BufWritePre * %s/\s\+$//e
+"	autocmd BufWritePre * %s/\n\+\%$//e
+"	autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Color preview config
 let g:Hexokinase_highlighters = ['backgroundfull']
