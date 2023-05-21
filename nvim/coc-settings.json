@@ -1,4 +1,5 @@
 {
     "suggest.noselect":true,
-    "signature.enable": false
+    "signature.enable": false,
+    "snippets.ultisnips.pythonPrompt": false
 }
