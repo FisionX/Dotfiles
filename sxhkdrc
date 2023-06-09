@@ -20,6 +20,8 @@ super + shift + p
 	pulseeffects
 super + shift + w
     librewolf -p anon
+super + w
+    librewolf -p anon
 super + o
     onlyoffice-desktopeditors
 super + k
@@ -55,4 +57,9 @@ super + control + Return
 alt + -
     pamixer --allow-boost -d 5; kill -44 $(pidof dwmblocks)
 alt + =
+    pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)
+
+XF86AudioLowerVolume
+    pamixer --allow-boost -d 5; kill -44 $(pidof dwmblocks)
+XF86AudioRaiseVolume
     pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)

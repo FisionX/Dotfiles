@@ -41,8 +41,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # Alias
-alias ll='ls -lh'
-alias la='ls -alh'
+alias ll='ls -lh --color'
+alias la='ls -alh --color'
 alias cl='clear'
 alias md='mkdir'
 alias btw='neofetch'
